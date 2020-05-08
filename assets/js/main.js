@@ -8,6 +8,7 @@ canvas.addEventListener('mouseup', stop);
 
 function start (e) {
     isDrawing = true;
+    draw(e);
 }
 
 function draw ({clientX: x, clientY: y}) {
