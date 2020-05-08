@@ -10,6 +10,8 @@ canvas.addEventListener('mousedown', start);
 canvas.addEventListener('mousemove', draw);
 canvas.addEventListener('mouseup', stop);
 
+clearButton.addEventListener('click', clearCanvas);
+
 function start (e) {
     isDrawing = true;
     draw(e);
