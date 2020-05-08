@@ -1,7 +1,6 @@
 const clearButton = document.getElementById('clear');
 const stroke_weight = document.querySelector('.stroke-weight');
 const color_picker = document.querySelector('.color-picker');
-
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 let isDrawing = false;
@@ -9,7 +8,6 @@ let isDrawing = false;
 canvas.addEventListener('mousedown', start);
 canvas.addEventListener('mousemove', draw);
 canvas.addEventListener('mouseup', stop);
-
 clearButton.addEventListener('click', clearCanvas);
 
 function start (e) {
@@ -19,9 +17,9 @@ function start (e) {
 
 function draw ({clientX: x, clientY: y}) {
     if (!isDrawing) return; // if not drawing, do nothing
-    ctx.lineWidth = 3;
+    ctx.lineWidth = stroke_weight.value;
     ctx.lineCap = "round";
-    ctx.strokeStyle = "#171717";
+    ctx.strokeStyle = color_picker.value;
 
     // DEV ED tutorial: https://www.youtube.com/c/dev_ed
     ctx.lineTo(x, y);
