@@ -1,3 +1,7 @@
+const clearButton = document.getElementById('clear');
+const stroke_weight = document.querySelector('.stroke-weight');
+const color_picker = document.querySelector('.color-picker');
+
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 let isDrawing = false;
@@ -27,6 +31,10 @@ function draw ({clientX: x, clientY: y}) {
 function stop () {
     isDrawing = false;
     ctx.beginPath();
+}
+
+function clearCanvas () {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
 window.addEventListener('resize', resizeCanvas);
