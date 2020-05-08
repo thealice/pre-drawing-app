@@ -23,6 +23,7 @@ function draw ({clientX: x, clientY: y}) {
 
 function stop () {
     isDrawing = false;
+    ctx.beginPath();
 }
 
 window.addEventListener('resize', resizeCanvas);
