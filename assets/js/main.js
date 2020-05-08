@@ -19,6 +19,8 @@ function draw ({clientX: x, clientY: y}) {
     // DEV ED tutorial: https://www.youtube.com/c/dev_ed
     ctx.lineTo(x, y);
     ctx.stroke();
+    ctx.beginPath();
+    ctx.moveTo(x, y);
 }
 
 function stop () {
