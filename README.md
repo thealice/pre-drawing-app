@@ -1,4 +1,4 @@
-# Simple Drawing App using JavaScript and HTML5 canvas
+# Simple Drawing App using JavaScript, HTML5 canvas,and SASS
 
 Results from Javascript / Canvas HTML code along with this [Tyler Potts video](https://www.youtube.com/watch?v=0MkcQpXXlFM).
 Simple drawing app in your browser. You can update line color and thickness to draw. 
